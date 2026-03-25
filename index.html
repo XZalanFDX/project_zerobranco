@@ -3,50 +3,511 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verona - Sito ufficiale</title>
+    <title>Verona – Comune di Verona</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="" alt="">
-    <div> <!--Kereső-->
-        <input type="text" placeholder="Search..">
-        <button>Search</button>
+
+<div id="top-bar">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="d-flex flex-wrap">
+                <a href="https://www.comune.verona.it/Amministrazione-Trasparente"><i class="bi bi-building me-1"></i>Transparent Administration</a>
+                <a href="https://albo-on-line.comune.verona.it/"><i class="bi bi-megaphone me-1"></i>Public Billboard</a>
+                <a href="https://www.comune.verona.it/accedi"><i class="bi bi-person me-1"></i>My Verona Account</a>
+            </div>
+            <div class="social-icons d-flex align-items-center">
+                <a href="https://www.facebook.com/comunediverona/" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/comune_di_verona/" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFpd9bn6I9_MwAAAZ0l0U0YA1Wrw2DXsAnNuoy_8X1WVy8GLvc1rCqrt4jj15EnFMaQxLB2ushjTI8ZNrscQ720XhmWCY35dz6iIqFJ4jS_pIo5NMXE2Swp9yPI-7cKOpHBjHs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcomune-di-verona-0b7b742a6%2F" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCqKjQsEWI1Eryu-Omq4i_KQ" title="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="https://t.me/comvr" title="Telegram"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
     </div>
-    <div> <!--Adminisztrációs linkek-->
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
-    <div> <!--Social média linkek-->
-        <p>Follow us on social: </p>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
-    <nav> <!--Fő navigációs linkek-->
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+</div>
+
+<!--HEADER-->
+<header id="main-header">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand-wrap" href="#">
+                <div class="brand-text">
+                    <div class="city">Verona</div>
+                    <div class="sub">Comune di Verona</div>
+                </div>
+            </a>
+            <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#">Administration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Novelty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Living in Verona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Elections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PNRR</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-grid me-1"></i>All topics</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                    <div class="header-search">
+                        <input type="text" placeholder="Search...">
+                        <i class="bi bi-search search-icon"></i>
+                    </div>
+                    <div class="dropdown">
+                        <button class="lang-btn dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-globe2 me-1"></i>EN
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="min-width:140px;">
+                            <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Magyar</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    <div> <!--Nyelvválasztó-->
-        <a href=""></a>
+</header>
+
+<!--HERO-->
+<section id="hero">
+    <div class="hero-video-wrap">
+        <video src="resources/bcg1.mp4" autoplay muted loop playsinline></video>
+        <div class="hero-video-placeholder"></div>
     </div>
-    <div> <!--login-->
-        <button type="button">Login</button>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-7">
+                <h1 class="hero-title"><span>Verona</span></h1>
+                <p class="hero-subtitle">The host city of the 2026 Winter Olympics.</p>
+                <div class="hero-cta-wrap">
+                    <a href="#latest-news" class="btn-hero-secondary"><i class="bi bi-newspaper me-2"></i>Our latest news</a>
+                </div>
+            </div>
+            
+        </div>
     </div>
-    <div> <!--Videó háttér-->
-        <video src=""></video>
+
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="bi bi-chevron-down"></i>
     </div>
-    <div>
-        <h1>Verona</h1>
-        <h3>The hoster of the 2026 Olympics</h3>
+</section>
+
+
+<!--LATEST NEWS (Carousel)-->
+<section id="latest-news">
+    <div class="container">
+        <div class="row align-items-end section-header reveal">
+            <div class="col">
+                <p class="section-eyebrow">News & Updates</p>
+                <h2 class="section-title">Latest News</h2>
+                <p class="section-desc">SZÖVEG — Short description introducing the latest news section of the Verona municipality portal.</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-4">View all <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+
+        <div id="newsCarousel" class="carousel slide position-relative px-4" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="bottom:-36px;">
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- S1 -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4 reveal reveal-delay-1">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Municipality</span>
+                                    <h5>SZÖVEG — News article headline placeholder for the first card</h5>
+                                    <p>SZÖVEG — Brief news description placeholder. This text summarizes the article content in two or three sentences for the reader.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 25, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reveal reveal-delay-2">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Events</span>
+                                    <h5>SZÖVEG — News article headline placeholder for the second card</h5>
+                                    <p>SZÖVEG — Brief news description placeholder. This text summarizes the article content for preview purposes on the homepage.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 24, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reveal reveal-delay-3">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Olympics 2026</span>
+                                    <h5>SZÖVEG — News article headline placeholder for the third card</h5>
+                                    <p>SZÖVEG — Brief news description placeholder. Short summary of the article featured in the latest news carousel section.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 23, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- S2 -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Culture</span>
+                                    <h5>SZÖVEG — Second slide news headline for card four</h5>
+                                    <p>SZÖVEG — Article summary placeholder text for the second carousel slide, card four.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 22, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Transport</span>
+                                    <h5>SZÖVEG — Second slide news headline for card five</h5>
+                                    <p>SZÖVEG — Article summary placeholder text for the second carousel slide, card five.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 21, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-card">
+                                <div class="card-img-top"><i class="bi bi-image"></i></div>
+                                <div class="card-body">
+                                    <span class="news-tag">Environment</span>
+                                    <h5>SZÖVEG — Second slide news headline for card six</h5>
+                                    <p>SZÖVEG — Article summary placeholder text for the second carousel slide, card six.</p>
+                                    <div class="news-date"><i class="bi bi-calendar3"></i> March 20, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
-    
+</section>
+
+<!--FEATURED NEWS-->
+<section id="featured-news">
+    <div class="container">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Highlights</p>
+            <h2 class="section-title">Featured Stories</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 reveal reveal-delay-1">
+                <div class="featured-card">
+                    <div class="bg-placeholder"></div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <span class="news-tag">Olympics 2026</span>
+                        <h4>SZÖVEG — Featured story headline, large card, main highlight of the week</h4>
+                        <p>SZÖVEG — Featured article lead paragraph. Short introduction to the main story.</p>
+                        <a href="#" class="btn-hero-secondary mt-3 d-inline-block" style="font-size:0.8rem; padding:8px 20px;">Read more <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4 h-100">
+                    <div class="col-12 reveal reveal-delay-2">
+                        <div class="featured-card-sm">
+                            <div class="bg-placeholder alt1"></div>
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <span class="news-tag" style="font-size:0.6rem; padding:2px 8px;">Culture</span>
+                                <h6>SZÖVEG — Second featured story headline, small card top</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 reveal reveal-delay-3">
+                        <div class="featured-card-sm">
+                            <div class="bg-placeholder alt2"></div>
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <span class="news-tag" style="font-size:0.6rem; padding:2px 8px;">Services</span>
+                                <h6>SZÖVEG — Third featured story headline, small card bottom</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--UPCOMING EVENTS-->
+<section id="events">
+    <div class="container">
+        <div class="row align-items-end section-header reveal">
+            <div class="col">
+                <p class="section-eyebrow" style="color:var(--gold-light);">Calendar</p>
+                <h2 class="section-title light">Upcoming Events</h2>
+                <p class="section-desc" style="color:rgba(255,255,255,0.5);">SZÖVEG — Introductory description for the events section of the Verona city portal.</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="btn btn-outline-light btn-sm rounded-pill px-4">Full calendar <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+                <div class="event-card">
+                    <div class="event-date-box"><div class="day">14</div><div class="month">Apr</div></div>
+                    <h5>SZÖVEG — Event name placeholder, first card</h5>
+                    <p>SZÖVEG — Short description of the event, its purpose and what visitors can expect to find.</p>
+                    <div class="event-meta">
+                        <span><i class="bi bi-clock"></i> 18:00</span>
+                        <span><i class="bi bi-geo-alt"></i> SZÖVEG Location</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+                <div class="event-card">
+                    <div class="event-date-box"><div class="day">20</div><div class="month">Apr</div></div>
+                    <h5>SZÖVEG — Event name placeholder, second card</h5>
+                    <p>SZÖVEG — Short description of the event, its purpose and what visitors can expect to find.</p>
+                    <div class="event-meta">
+                        <span><i class="bi bi-clock"></i> 10:00</span>
+                        <span><i class="bi bi-geo-alt"></i> SZÖVEG Location</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+                <div class="event-card">
+                    <div class="event-date-box"><div class="day">03</div><div class="month">May</div></div>
+                    <h5>SZÖVEG — Event name placeholder, third card</h5>
+                    <p>SZÖVEG — Short description of the event, its purpose and what visitors can expect to find.</p>
+                    <div class="event-meta">
+                        <span><i class="bi bi-clock"></i> 14:00</span>
+                        <span><i class="bi bi-geo-alt"></i> SZÖVEG Location</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+                <div class="event-card">
+                    <div class="event-date-box"><div class="day">18</div><div class="month">May</div></div>
+                    <h5>SZÖVEG — Event name placeholder, fourth card</h5>
+                    <p>SZÖVEG — Short description of the event, its purpose and what visitors can expect to find.</p>
+                    <div class="event-meta">
+                        <span><i class="bi bi-clock"></i> 09:00</span>
+                        <span><i class="bi bi-geo-alt"></i> SZÖVEG Location</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FEATURED PLACES-->
+<section id="places">
+    <div class="container">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Discover</p>
+            <h2 class="section-title">Highlights of Verona</h2>
+            <p class="section-desc">SZÖVEG — Introduction to the iconic landmarks and must-visit places of the city of Verona.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+                <div class="place-card">
+                    <div class="bg-placeholder p1"></div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Arena di Verona</h5>
+                        <p>SZÖVEG — Brief place description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+                <div class="place-card">
+                    <div class="bg-placeholder p2"></div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Juliet's Balcony</h5>
+                        <p>SZÖVEG — Brief place description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+                <div class="place-card">
+                    <div class="bg-placeholder p3"></div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Piazza delle Erbe</h5>
+                        <p>SZÖVEG — Brief place description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+                <div class="place-card">
+                    <div class="bg-placeholder p4"></div>
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Ponte Pietra</h5>
+                        <p>SZÖVEG — Brief place description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--SPECIAL TOPICS-->
+<section id="topics">
+    <div class="container">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Services</p>
+            <h2 class="section-title">Explore Topics</h2>
+            <p class="section-desc">SZÖVEG — Brief description introducing the thematic topics and city service areas available on this portal.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-1">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-building"></i></div>
+                    <h6>Municipality</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-2">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-house-heart"></i></div>
+                    <h6>Housing</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-3">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-bus-front"></i></div>
+                    <h6>Transport</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-4">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-tree"></i></div>
+                    <h6>Environment</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-1">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-mortarboard"></i></div>
+                    <h6>Education</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-2">
+                <div class="topic-card">
+                    <div class="topic-icon"><i class="bi bi-heart-pulse"></i></div>
+                    <h6>Health</h6>
+                    <p>SZÖVEG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <div class="city">Verona</div>
+                    <div class="sub">Comune di Verona</div>
+                </div>
+                <p>SZÖVEG — Short footer description about the city of Verona and this official municipal portal. Two to three sentences about the city's values and mission.</p>
+                <div class="footer-social mt-4">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="footer-title">Services</h6>
+                <ul class="footer-links">
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="footer-title">City Life</h6>
+                <ul class="footer-links">
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                    <li><a href="#">SZÖVEG</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="footer-title">Contact</h6>
+                <ul class="footer-links">
+                    <li><i class="bi bi-geo-alt me-2" style="color:var(--gold);"></i>SZÖVEG — Address, Verona, Italy</li>
+                    <li class="mt-2"><i class="bi bi-telephone me-2" style="color:var(--gold);"></i>SZÖVEG — Phone number</li>
+                    <li class="mt-2"><i class="bi bi-envelope me-2" style="color:var(--gold);"></i>SZÖVEG — Email address</li>
+                    <li class="mt-2"><i class="bi bi-clock me-2" style="color:var(--gold);"></i>SZÖVEG — Opening hours</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="d-flex flex-wrap justify-content-between gap-3 footer-bottom">
+            <span>© 2026 Comune di Verona. All rights reserved.</span>
+            <div class="d-flex gap-3">
+                <a href="#" style="color:rgba(255,255,255,0.35);">Privacy Policy</a>
+                <a href="#" style="color:rgba(255,255,255,0.35);">Accessibility</a>
+                <a href="#" style="color:rgba(255,255,255,0.35);">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+</script>
 </body>
 </html>
